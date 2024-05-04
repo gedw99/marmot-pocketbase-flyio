@@ -26,6 +26,10 @@ This demo effectively shows how PocketBase can be pushed closer to the edge. Aft
  - **This example doesn't use persistent volume** - Base snapshot and logs in Marmot nodes should be enough to get you
    up and running every-time. You can configure Marmot with S3/Minio snapshots for higher reliability. 
 
+## Make file
+
+See the Makefile and base.mk for how to fo this using make.
+
 ## Install Flyctl
 
  - Follow the installation instructions from https://fly.io/docs/hands-on/install-flyctl/.
@@ -33,6 +37,8 @@ This demo effectively shows how PocketBase can be pushed closer to the edge. Aft
  - Run `fly auth login` to login.
 
 ## Deploy and Scale
+
+
 
  - Create Fly app using `fly app create`, fill in the information on prompts.
  - Deploy on app using `fly deploy -a <application-name>`, here `application-name` will be the name of app you created
