@@ -34,7 +34,7 @@ fly-deploy:
 fly-console:
 	open $(FLY_CONSOLE)
 fly-scale-zero:
-	$(FLY_CMD) scale count o -a $(FLY_NAME)
+	$(FLY_CMD) scale count 0 -a $(FLY_NAME)
 fly-scale-up:
 	$(FLY_CMD) scale count 3 -a $(FLY_NAME)
 fly-scale-down:
